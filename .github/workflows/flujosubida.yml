@@ -1,0 +1,22 @@
+name: Integración y entrega continua
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      nombres: "Miguel Antonio"
+      apellidos: "Cuadros Gonzales"
+      edad: "31"
+      version_de_mi_proyecto: "3.0"
+
+    steps:
+      - name: presentación
+        run: |
+          echo "Nombres: $nombres"
+          echo "Apellidos: $apellidos"
+          echo "Edad: $edad"
