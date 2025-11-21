@@ -32,3 +32,7 @@ jobs:
         run: |
           echo "user: $user"
           echo "password: $password"
+
+      - name: variables abiertas
+        run: |
+          echo "versión de mi proyecto: $version_de_mi_proyecto"
